@@ -133,9 +133,11 @@ const songNames = [
 
 function loadSongs() {
   for (let name of songNames) {
+    // Кодируем только специальные символы, но не всю строку
+    const encodedName = encodeURIComponent(name) + ".mp3";
     songs.push({
       name: name,
-      url: MUSIC_BASE_URL + encodeURIComponent(name + ".mp3")
+      url: MUSIC_BASE_URL + encodedName
     });
   }
   songCountSpan.innerText = `${songs.length} песен загружено`;
@@ -154,7 +156,7 @@ function randomSong() {
 
   audio.src = currentSong.url;
   audio.load();
-  audio.play().catch(e => console.log("Автовоспроизведение заблокировано"));
+  audio.play().catch(e => console.log("Автовоспроизведение заблокировано", e));
 
   answerInput.value = "";
   resultDiv.innerText = "Слушайте и вводите название...";
