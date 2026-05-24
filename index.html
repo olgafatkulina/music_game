@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Музыкальная викторина. Версия: зарубежные песни</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Угадай мелодию</h1>
+        <p class="description">Слушай и вспоминай</p>
+      </header>
+
+      <div class="player-card">
+        <audio id="audioPlayer" controls></audio>
+      </div>
+
+      <div class="quiz-area">
+        <input
+          type="text"
+          id="answerInput"
+          placeholder="Введите название песни"
+          autocomplete="off"
+        />
+
+        <div class="button-group">
+          <button id="randomBtn" class="btn btn-primary">
+            Случайный трек
+          </button>
+          <button id="checkBtn" class="btn btn-secondary">Проверить</button>
+        </div>
+
+        <div id="resultArea" class="result-message"></div>
+        <button id="revealBtn" class="btn btn-reveal">Показать ответ</button>
+      </div>
+
+      <div class="footer">
+        <p id="songCount" class="song-counter"></p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
