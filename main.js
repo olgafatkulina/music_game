@@ -129,7 +129,7 @@ const songNames = [
   "Шуберт. Ave Maria",
   "Шуберт. Музыкальный  момент",
   "Шуберт. Серенада",
-  "Газан. 67"
+  "Gazan - 67 (Six Seven)"
 ];
 
 function loadSongs() {
