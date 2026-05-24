@@ -9,7 +9,7 @@ const answerInput = document.getElementById("answerInput");
 const resultDiv = document.getElementById("resultArea");
 const songCountSpan = document.getElementById("songCount");
 
-const MUSIC_BASE_URL = 'https://pub-448184de5bd447ba91e4108089e8613e.r2.dev';
+const MUSIC_BASE_URL = 'https://pub-448184de5bd447ba91e4108089e8613e.r2.dev/';
 
 const songNames = [
   "Альбенис. Астурия",
